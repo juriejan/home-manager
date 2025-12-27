@@ -73,6 +73,10 @@
     # EDITOR = "emacs";
   };
 
+  home.shellAliases = {
+    zed = "zeditor";
+  };
+
   programs = {
     git = {
       enable = true;
