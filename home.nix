@@ -34,12 +34,8 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    # pkgs.git
     pkgs.helix
     pkgs.nil
-    # pkgs.nushell
-    # pkgs.zed-editor
-    # pkgs.zoxide
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -121,6 +117,8 @@
     zed-editor = {
       enable = true;
       userSettings = {
+        ui_font_size = 14;
+        buffer_font_size = 12;
         terminal = {
           shell = {
             program = "nu";
