@@ -120,6 +120,13 @@
     };
     zed-editor = {
       enable = true;
+      userSettings = {
+        terminal = {
+          shell = {
+            program = "nu";
+          };
+        };
+      };
     };
   };
 }
