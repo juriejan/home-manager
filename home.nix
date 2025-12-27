@@ -78,7 +78,6 @@
   };
 
   programs = {
-    home-manager.enable = true;
     git = {
       enable = true;
       settings = {
@@ -91,6 +90,8 @@
         };
       };
     };
+    gh.enable = true;
+    home-manager.enable = true;
     nushell = {
       enable = true;
       extraEnv = ''
