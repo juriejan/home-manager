@@ -78,6 +78,11 @@
   };
 
   programs = {
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+      enableNushellIntegration = true;
+    };
     git = {
       enable = true;
       settings = {
@@ -110,6 +115,7 @@
           | append '/run/current-system/sw/bin'
           | append '/nix/var/nix/profiles/default/bin'
           | append $'($env.HOME)/.nix-profile/bin'
+          | append '/opt/homebrew/bin'
           | uniq
         )
       '';
@@ -120,7 +126,20 @@
     };
     zed-editor = {
       enable = true;
+      extensions = [
+        "html"
+        "mcp-server-context7"
+        "nix"
+      ];
       userSettings = {
+        context_servers = {
+          mcp-server-context7 = {
+            enabled = true;
+            settings = {
+              context7_api_key = "\${CONTEXT7_API_KEY}";
+            };
+          };
+        };
         ui_font_size = 14;
         buffer_font_size = 12;
         terminal = {
