@@ -140,6 +140,8 @@
             };
           };
         };
+        preferred_line_length = 80;
+        soft_wrap = "preferred_line_length";
         ui_font_size = 14;
         buffer_font_size = 12;
         terminal = {
