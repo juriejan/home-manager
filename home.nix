@@ -132,6 +132,7 @@
         "html"
         "mcp-server-context7"
         "nix"
+        "toml"
       ];
       userSettings = {
         context_servers = {
