@@ -141,8 +141,10 @@
         "mcp-server-context7"
         "nix"
         "toml"
+        "terraform"
       ];
       userSettings = {
+        show_whitespaces = "all";
         context_servers = {
           mcp-server-context7 = {
             enabled = true;
