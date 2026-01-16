@@ -142,6 +142,7 @@
         "nix"
         "toml"
         "terraform"
+        "codebook"
       ];
       userSettings = {
         show_whitespaces = "all";
