@@ -137,12 +137,14 @@
     zed-editor = {
       enable = true;
       extensions = [
+        "codebook"
+        "csv"
         "html"
         "mcp-server-context7"
         "nix"
-        "toml"
+        "sql"
         "terraform"
-        "codebook"
+        "toml"
       ];
       userSettings = {
         show_whitespaces = "all";
