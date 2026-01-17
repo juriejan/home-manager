@@ -127,6 +127,33 @@
         )
       '';
     };
+    starship = {
+      enable = true;
+      enableNushellIntegration = true;
+      settings = {
+        format = ''
+          $os$username$hostname$directory$git_branch
+          $character
+        '';
+        os = {
+          disabled = false;
+          style = "bold blue";
+        };
+        username = {
+          show_always = true;
+          style_user = "bold green";
+          format = "[$user]($style)";
+        };
+        hostname = {
+          ssh_only = false; # Show even if not in SSH
+          format = "@[$hostname](bold red) ";
+        };
+        directory = {
+          truncation_length = 3;
+          style = "bold italic cyan";
+        };
+      };
+    };
     vscode = {
       enable = true;
     };
