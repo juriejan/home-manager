@@ -4,7 +4,7 @@
 
   imports = [
     ./editors.nix
-    ./git.nix
+    ./scm.nix
     ./shell.nix
   ];
 
@@ -25,10 +25,6 @@
   };
 
   home.sessionVariables = {
-  };
-
-  home.shellAliases = {
-    zed = "zeditor";
   };
 
   programs.home-manager.enable = true;

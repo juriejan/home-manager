@@ -27,12 +27,13 @@
     enableNushellIntegration = true;
     settings = {
       format = ''
-        $os$username$hostname$directory$git_branch
+        $username$hostname $os $directory$git_branch
         $character
       '';
       os = {
         disabled = false;
         style = "bold blue";
+        format = "[\\($name\\)]($style)";
       };
       username = {
         show_always = true;
@@ -41,7 +42,7 @@
       };
       hostname = {
         ssh_only = false;
-        format = "@[$hostname](bold red) ";
+        format = "@[$hostname](bold red)";
       };
       directory = {
         truncation_length = 3;
