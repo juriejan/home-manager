@@ -17,6 +17,8 @@
   home.stateVersion = "25.11";
 
   home.packages = [
+    pkgs.colima
+    pkgs.docker
     pkgs.fvm
     pkgs.qpdf
   ];
