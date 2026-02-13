@@ -55,4 +55,8 @@
     enable = true;
     enableNushellIntegration = true;
   };
+
+  programs.zellij = {
+    enable = true;
+  };
 }
