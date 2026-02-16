@@ -1,6 +1,12 @@
 { ... }:
 
 {
+
+  programs.carapace = {
+    enable = true;
+    enableNushellIntegration = true;
+  };
+
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
@@ -59,4 +65,5 @@
   programs.zellij = {
     enable = true;
   };
+
 }
