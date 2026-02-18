@@ -17,6 +17,7 @@
   home.stateVersion = "25.11";
 
   home.packages = [
+    pkgs.certbot
     pkgs.colima
     pkgs.docker
     pkgs.fvm
