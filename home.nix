@@ -36,7 +36,7 @@
   programs.aichat = {
     enable = true;
     settings = {
-      model = "openrouter:z-ai/glm-5";
+      model = "openrouter:google/gemini-3.1-pro-preview";
       clients = [
         {
           type = "openai-compatible";
