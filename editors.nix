@@ -28,6 +28,7 @@
       "make"
       "mcp-server-context7"
       "mcp-server-sequential-thinking"
+      "nu"
       "nix"
       "sql"
       "terraform"
