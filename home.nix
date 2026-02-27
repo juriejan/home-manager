@@ -22,6 +22,7 @@
     pkgs.docker
     pkgs.fvm
     pkgs.qpdf
+    pkgs.speedtest-go
   ];
 
   home.file = {
@@ -31,4 +32,18 @@
   };
 
   programs.home-manager.enable = true;
+
+  programs.aichat = {
+    enable = true;
+    settings = {
+      model = "openrouter:z-ai/glm-5";
+      clients = [
+        {
+          type = "openai-compatible";
+          name = "openrouter";
+          api_base = "https://openrouter.ai/api/v1";
+        }
+      ];
+    };
+  };
 }
