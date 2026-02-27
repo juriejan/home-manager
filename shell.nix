@@ -2,6 +2,22 @@
 
 {
 
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      font = {
+        size = 12.0;
+      };
+      terminal.shell = {
+        program = "zellij";
+        args = [
+          "-l"
+          "welcome"
+        ];
+      };
+    };
+  };
+
   programs.carapace = {
     enable = true;
     enableNushellIntegration = true;
