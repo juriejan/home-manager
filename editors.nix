@@ -11,6 +11,16 @@
 
   programs.helix = {
     enable = true;
+    settings = {
+      editor = {
+        soft-wrap = {
+          enable = true;
+          wrap-at-text-width = true;
+        };
+        text-width = 80;
+        rulers = [ 80 ];
+      };
+    };
   };
 
   programs.vscode = {
