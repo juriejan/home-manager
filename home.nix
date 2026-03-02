@@ -22,6 +22,7 @@
     pkgs.colima
     pkgs.docker
     pkgs.fvm
+    pkgs.gdrive3
     pkgs.qpdf
     pkgs.speedtest-go
   ];
