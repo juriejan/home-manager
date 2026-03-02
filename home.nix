@@ -3,6 +3,7 @@
 {
 
   imports = [
+    ./chat.nix
     ./editors.nix
     ./scm.nix
     ./shell.nix
@@ -33,17 +34,4 @@
 
   programs.home-manager.enable = true;
 
-  programs.aichat = {
-    enable = true;
-    settings = {
-      model = "openrouter:google/gemini-3.1-pro-preview";
-      clients = [
-        {
-          type = "openai-compatible";
-          name = "openrouter";
-          api_base = "https://openrouter.ai/api/v1";
-        }
-      ];
-    };
-  };
 }
