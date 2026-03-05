@@ -16,6 +16,7 @@ let
 in
 {
   home.packages = [
+    pkgs.gemini-cli
     rust-mcp-filesystem
   ];
 
