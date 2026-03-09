@@ -25,6 +25,7 @@
     pkgs.gdrive3
     pkgs.qpdf
     pkgs.speedtest-go
+    pkgs.thunderbird
   ];
 
   home.file = {
