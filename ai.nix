@@ -16,9 +16,31 @@ let
 in
 {
   home.packages = [
-    pkgs.gemini-cli
     rust-mcp-filesystem
   ];
+
+  programs.gemini-cli = {
+    enable = true;
+    settings = {
+      security.auth.selectedType = "gemini-api-key";
+      general = {
+        sessionRetention = {
+          enabled = true;
+          maxAge = "30d";
+          warningAcknowledged = true;
+        };
+        preferredEditor = "hx";
+      };
+      mcpServers = {
+        context7 = {
+          url = "https://mcp.context7.com/sse";
+          headers = {
+            X-API-Key = "$CONTEXT7_API_KEY";
+          };
+        };
+      };
+    };
+  };
 
   programs.aichat = {
     enable = true;

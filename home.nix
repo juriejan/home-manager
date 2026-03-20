@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ./chat.nix
+    ./ai.nix
     ./editors.nix
     ./scm.nix
     ./shell.nix
