@@ -23,6 +23,7 @@ in
     enable = true;
     settings = {
       security.auth.selectedType = "gemini-api-key";
+      security.auth.geminiApiKey.apiKey = "$GOOGLEAI_API_KEY";
       general = {
         sessionRetention = {
           enabled = true;
