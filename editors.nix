@@ -11,6 +11,7 @@
 
   programs.helix = {
     enable = true;
+    extraPackages = [ pkgs.harper ];
     settings = {
       editor = {
         soft-wrap = {
@@ -20,6 +21,22 @@
         text-width = 80;
         rulers = [ 80 ];
       };
+    };
+    languages = {
+      language-server.harper-ls = {
+        command = "harper-ls";
+        args = [ "--stdio" ];
+      };
+      language = [
+        {
+          name = "nix";
+          language-servers = [ "nil" "harper-ls" ];
+        }
+        {
+          name = "markdown";
+          language-servers = [ "harper-ls" ];
+        }
+      ];
     };
   };
 
