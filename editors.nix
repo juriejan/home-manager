@@ -23,6 +23,7 @@
         file-picker = {
           hidden = false;
         };
+        auto-format = true;
       };
     };
     languages = {
