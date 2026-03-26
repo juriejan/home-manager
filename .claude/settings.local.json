@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:docs.helix-editor.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:mynixos.com)",
+      "Bash(find:*)",
+      "WebFetch(domain:nixos.org)",
+      "WebFetch(domain:zellij.dev)",
+      "Bash(git:*)",
+      "WebFetch(domain:quantonganh.com)",
+      "WebFetch(domain:guillermoap.medium.com)",
+      "WebFetch(domain:www.guillermoaguirre.dev)",
+      "Bash(gh search:*)",
+      "Bash(nix eval:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(nix search:*)",
+      "Bash(gh api:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}

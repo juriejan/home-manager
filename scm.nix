@@ -3,6 +3,7 @@
 {
   programs.git = {
     enable = true;
+    ignores = [];
     settings = {
       alias = {
         ad = "add";
