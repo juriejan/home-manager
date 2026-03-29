@@ -24,6 +24,7 @@
     pkgs.fvm
     pkgs.gdrive3
     pkgs.qpdf
+    pkgs.rates
     pkgs.speedtest-go
     pkgs.thunderbird
   ];
