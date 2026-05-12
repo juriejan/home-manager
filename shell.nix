@@ -39,6 +39,7 @@
         | append '/nix/var/nix/profiles/default/bin'
         | append $'($env.HOME)/.nix-profile/bin'
         | append '/opt/homebrew/bin'
+        | append '/usr/local/bin'
         | uniq
       )
     '';
